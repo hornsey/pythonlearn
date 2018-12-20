@@ -10,7 +10,7 @@ import smtplib
 def send_mail():
     try:
         handle = smtplib.SMTP('smtp.163.com', 25)
-        handle.login('ht20042444@163.com', '420624')
+        handle.login('ht@163.com', '123456')
         msg = 'To: 357776369@qq.com\r\nFrom:ht20042444@163.com\r\nSubject:hello\r\n'
         handle.sendmail('ht20042444@163.com', '357776369@qq.com', msg)
         handle.close()
